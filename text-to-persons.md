@@ -83,11 +83,17 @@ If the test is in a `test_` prefixed file you can run with `pytest`.
 Questions
 ---------
 Consider some issues
-- Should the CampusAI LLM API be used or is, e.g., spaCy better?
-- What models are there on CampusAI?
-- Should the LLM be called via a library or "directly" to the Web API.
-- What format should the prompt have?
-- Are chain-of-thought, few-short prompting, etc. necessary?
+- **Should the CampusAI LLM API be used or is, e.g., spaCy better?**
+
+- **What models are there on CampusAI?**
+
+Deepseek-r1, gemma3, qwen3.
+
+- **Should the LLM be called via a library or "directly" to the Web API.**
+
+- **What format should the prompt have?**
+
+- **Are chain-of-thought, few-short prompting, etc. necessary?**
 
 
 Requirements & Resources
