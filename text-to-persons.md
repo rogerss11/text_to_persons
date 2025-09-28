@@ -83,7 +83,13 @@ If the test is in a `test_` prefixed file you can run with `pytest`.
 Questions
 ---------
 Consider some issues
+
 - **Should the CampusAI LLM API be used or is, e.g., spaCy better?**
+
+Using the CampusAI LLM API is a good choice as it is more robust and can
+detect names more accurately than traditional NLP tools such as spaCy.
+However this also comes at an elevated cost in terms of time, computation,
+and in some cases money.
 
 - **What models are there on CampusAI?**
 
@@ -91,10 +97,19 @@ Deepseek-r1, gemma3, qwen3.
 
 - **Should the LLM be called via a library or "directly" to the Web API.**
 
+The LLM is called using the openai library.
+
 - **What format should the prompt have?**
+
+The prompt is a list of dictionaries where the key is either "role" or "content"
+and the value is either system or assistant for the role, and the text input or response
+for the content.
 
 - **Are chain-of-thought, few-short prompting, etc. necessary?**
 
+It is important to prompt properly and give clear instructions to the LLM, as sometimes
+it does not return the output in the format that you want it and then causes the code to
+crash. Giving examples helped me improve the success rate.
 
 Requirements & Resources
 ------------------------
