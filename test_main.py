@@ -8,7 +8,7 @@ expected = [
 ]
 
 import os
-from app import extract_persons
+from main import campusai_extract_persons
 
 def test_examples_from_prompt():
     examples = [
